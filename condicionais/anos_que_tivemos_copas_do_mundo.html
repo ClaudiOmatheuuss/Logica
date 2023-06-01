@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="copa.css">
+    <title>Calcula Ano Copa do Mundo</title>
+</head>
+<body>                
+
+    <h1> Descubra os anos em que tivemos copas do mundo aqui abaixo:</h1>
+
+        <script>
+
+            function pulaLinha() {
+
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+            function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+            var limite = parseInt(prompt("Bem vindo(a)!! = )           " + "Digite a data limite:"));
+            var anoCopa = 1930;
+
+            while(anoCopa <= limite) {
+
+            mostra("Teve copa do mundo em " + anoCopa);
+            anoCopa = anoCopa + 4;
+
+            //if (anoCopa == 2002) {
+                //mostra("Teve copa do mundo em " + anoCopa + "E O BRASIL FOI PENTACAMPEÃO");}
+            //if(anoCopa == 2014) {
+                //mostra("Teve copa do mundo em " + anoCopa + "E O BRASIL LEVOU UM 7X1 DA ALEMANHA");}
+      
+
+            
+            mostra("FIM!");
+        }
+        
+        </script>
+</body>
+</html>

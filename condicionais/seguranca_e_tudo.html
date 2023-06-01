@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var login = prompt("Digite seu login");
+	var senha = prompt("Digite sua senha!");
+
+
+	if(login == "claudiomuf" && senha == "claudio123") {
+		alert("acesso liberado! : D")
+		mostra("Olá, Claudio.	Seja bem-vindo! = )");
+	} else {
+		alert("Acesso negado! = /")
+		mostra("PRESSIONE F5 E TENTE NOVAMENTE.");
+	}
+</script>
+</script>

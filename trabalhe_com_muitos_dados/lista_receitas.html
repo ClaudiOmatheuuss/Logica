@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    var ingredientes = [];
+
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+    var contador = 1;
+
+    while( contador <= quantidade) {
+
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+
+        var existe = false;
+
+        for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+
+            if( ingredientes[posicao] == ingrediente) {
+
+                existe = true;
+                break;
+            }
+        }
+
+        if( existe == false) {
+
+            ingredientes.push(ingrediente);
+            contador++;
+        }
+    }
+
+    console.log(ingredientes);
+    </script>
+
+
+
+
+    //plugins vs code
+
+
+    //Quit Control: Essa extensão é OBRIGATÓRIA, caso você não queira se frustrar apertando Command + Q ou o equivalente no windows e perder o que você estava trabalhando.
+Git Lens: Esse plugin é basicamente um Git Blame integrado com o seu código, você consegue saber quem adicionou deterimnado código e quando, isso me ajuda muito a em caso de dúvida pingar a pessoa ou alguém que trabalhou junto.
+Gitignore: Esse aqui adiciona um suporte bacana para trabalhar com gitignore dentro da ferramenta, no geral você acaba usando em poucos momentos no projeto, mas commo eu falei que ia deixar tudo oque eu uso então ele segue na lista
+Quokka JS: Esse aqui eu uso para ter um feedback visual dos dados entre as variáveis que estou mexendo quando estou resolvendo problemas de maratona de programação.
+EsLint: Linter é vida e poder rodar ele usando o Command + Shift + P é uma maravilha e me deixa mais confortável do que ficar arrumando tudo manualmente, ou rodando o eslint via terminal.

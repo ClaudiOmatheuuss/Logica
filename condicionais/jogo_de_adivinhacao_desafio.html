@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	} 
+	function sorteia(n){
+		return Math.round(Math.random() * n);
+	}
+	alert("Seja Bem-vindo ao nosso jogo de adivinhação! = )" + "                    REGRAS: " + "  1. Chute um numero entre 0 e 5.");
+
+	var numeroPensado = sorteia(5);
+	var chute = parseInt(prompt("Já pensei em um bom número hehe, Digite seu chute!"));
+
+
+
+	if(chute == numeroPensado) {
+		mostra("Você acertou! = )");
+	} else {
+		mostra("Você errou!");
+	}
+	if(chute == numeroPensado) {
+		mostra("Muito bem! Seu chute foi exatamento o número que pensei.")
+}
+	if(chute > numeroPensado) {
+		mostra("O seu chute é maior que o número pensado.");
+	} else {
+		mostra("O seu chute é menor que o número pensado.");
+	} 
+
+	mostra("Eu pensei no número " + numeroPensado);
+</script>

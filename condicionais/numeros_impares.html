@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var escolhaUsuario = prompt("Você quer que eu imprima os números ímpares(i) ou pares(p) de 1 a 100?");
+
+    if(escolhaUsuario == "i") {
+        var contador = 1;
+    while(contador <= 100) {
+        mostra(contador);
+        contador = contador + 2; // incrementa de dois em dois
+    }
+}
+    
+        if(escolhaUsuario == "p"){
+    var contador = 2;
+    while(contador <= 100) {
+        mostra(contador);
+        contador = contador + 2; // incrementa de dois em dois
+    }
+}
+    mostra("FIM");
+
+</script>

@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>EXIBIR</button>
+
+<script>
+
+    var input = document.querySelector("input");
+
+    function exibe() {
+
+        if(input.value == "alert"){
+        alert(input.value);
+
+    }
+
+        if(input.value == "mostra"){
+        document.write(input.value)
+        } else {
+            document.write("PRESSIONE F5")
+        }
+}   
+
+    var button = document.querySelector("button");
+    button.onclick = exibe;
+</script>

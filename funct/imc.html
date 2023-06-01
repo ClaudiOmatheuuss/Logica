@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+	
+	function pulalinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulalinha();
+	}
+	function calculoimc(altura, peso){
+
+		var imc = peso / (altura * altura);
+		return(imc);
+	}
+
+	mostra("O IMC(Indice de Massa Corporal) é uma técnica de cálculo frequentemente utilizada para saber se o peso de uma pessoa é um peso saudável para a altura da mesma, mesmo sendo uma técnica sem comprovância científica de eficácia ignorando fatores como por exemplo massa muscular do individuo, idade e etc... , é uma técnica bastante famosa e nesse programa vamos calcular o seu e do seu amigo"); 
+		pulalinha();
+
+	var imcFlavio = calculoimc(1.81, 65);
+	var imcAmigo = calculoimc(1.90, 80);
+	 mostra(imcFlavio);
+	 mostra(imcAmigo);
+</script>

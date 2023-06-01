@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+    var n = parseInt(prompt("Digite o numero da tabuada"));
+            //variavel inicial          //até onde ir/condição      //incremento da variavel inicial, fim do while para nao imprimir infinitamente
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+    mostra (n * multiplicador);
+} 
+
+    mostra("FIM!");
+</script>

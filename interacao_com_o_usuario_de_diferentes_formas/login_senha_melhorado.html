@@ -1,0 +1,31 @@
+    <meta charset="UTF-8">
+
+    <label for="login">Login:</label>
+    <input type="text" id="login">
+
+    <label for="senha">Senha:</label>
+    <input type="text" id="senha">
+
+    <button onclick="verificarCredenciais()">Verificar</button>
+
+    <script>
+
+        function verificarCredenciais() {
+            // credenciais hipotéticas
+            var loginCorreto = "usuario";
+            var senhaCorreta = "senha123";
+
+            // valores inseridos pelo usuário
+            var loginInserido = document.getElementById("login").value;
+            var senhaInserida = document.getElementById("senha").value;
+
+             if (loginInserido === loginCorreto && senhaInserida === senhaCorreta) {
+                alert("Credenciais corretas! Acesso permitido.");
+            } else {
+                   for (var tentativas = 1; tentativas = 3; tentativas++) {
+                document.write("QUANTIDADE MÁXIMA DE TENTATIVAS FOI ATINGIDO, PRESSIONE F5 E TENTE NOVAMENTE.")
+            }
+                alert("Credenciais incorretas! Acesso negado.");
+            }
+        }
+    </script>

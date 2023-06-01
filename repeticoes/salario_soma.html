@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalDeFuncionarios = parseInt(prompt("Informe o total de funcionários"));
+
+    var contador = 1;
+
+    var totalGastoComSalario = 0;
+
+    while(contador <= totalDeFuncionarios) {
+        var gasto = parseInt(prompt("Entre com o valor do salário desse funcionário"));
+        totalGastoComSalario = totalGastoComSalario + gasto
+        contador++;
+    }
+
+    mostra("Você tem ao total " + totalGastoComSalario + " reais " + "a gastar da receita da empresa com salários esse mês.");
+
+</script>
